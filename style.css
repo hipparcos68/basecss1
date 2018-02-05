@@ -1,9 +1,44 @@
-p{
-  font-size: 20px;
-  color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
 }
 
-h1{
-  font-size: 100px;
-  color: red;
+.wrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px;
+  background-color: gray;
+}
+
+ul {
+  width: 100%;
+  background-color: white;
+  overflow-x: auto;
+
+  /* method */
+  white-space: nowrap;
+}
+
+li {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+
+  /* method */
+  display: inline-block;
+}
+
+li + li {
+  margin-left: 5px;
+}
+
+/* method */
+li:first-child {
+  margin-left: 50px;
+}
+li:last-child {
+  margin-right: 50px;
 }
